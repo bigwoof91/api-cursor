@@ -1,0 +1,32 @@
+{
+  "name": "api-cursor",
+  "version": "1.0.0",
+  "description": "Microservice that collects cursor position",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigwoof91/api-cursor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigwoof91/api-cursor/issues"
+  },
+  "homepage": "https://github.com/bigwoof91/api-cursor#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.15.3",
+    "install": "^0.12.2",
+    "morgan": "^1.9.1",
+    "npm": "^6.9.0",
+    "path": "^0.12.7",
+    "pg": "^7.9.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.1.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "development": {
+    "username": "wolf",
+    "password": "",
+    "database": "cursor",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "wolf",
+    "password": "",
+    "database": "cursor",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
+    "dialect": "postgres"
+  }
+}
