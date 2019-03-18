@@ -1,8 +1,6 @@
 const db = require("../models");
 
-exports.setCoordinates = function (req, res, next) {
-
-  console.log(db.coordinates)
+module.exports.setCoordinates = function (req, res, next) {
   db.coordinates.create({
     ...req.body
   }).then(function (data) {
@@ -11,5 +9,4 @@ exports.setCoordinates = function (req, res, next) {
       data
     });
   });
-
 };

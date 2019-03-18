@@ -2,11 +2,12 @@ CREATE DATABASE cursor;
 USE cursor;
 
 CREATE TABLE "public"."cursor" (
-  "id" serial, /* should eventually be a customers foreign key */
+  "id" serial, /* should eventually be a customer's id; foreign key */
   "coordinates" text[],
   "x_coordinates" int[],
   "y_coordinates" int[],
   "goals" text[],
+  "url" text
   PRIMARY KEY ("id")
 );
 
