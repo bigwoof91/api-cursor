@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/bigwoof91/api-cursor/issues"
   },
-  "main": "functions/server.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },

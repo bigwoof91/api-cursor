@@ -25,6 +25,7 @@ module.exports = function (app) {
     res.write('<h1>api cursor - I help you design $h1t, well.</h1>');
     res.end();
   });
+  
   router.post('/', (req, res) => res.json({ postBody: req.body }));
 
   //= ========================
