@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const origins = require('./origins');
 const cors = require('cors')
 const cursor = require('../controllers/cursor');
+const morgan = require('morgan');
 
 const corsOptions = {
   origin: function (origin, callback) {
@@ -40,5 +41,5 @@ module.exports = function (app) {
 
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: false }));
-  app.use('/.netlify/functions/server', router);
+  app.use(morgan('combined')) // Log requests to API using morgan
 };

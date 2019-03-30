@@ -12,10 +12,10 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "",
-    "password": "",
-    "database": "",
-    "host": "",
+    "username": "tgwiplggozzfez",
+    "password": "3e57b13f1ee3f7c731e49a8402a68a36a7b947c4b7c6557fefaa9b284317d5b4",
+    "database": "d9i0i0e20i1c2n",
+    "host": "ec2-23-23-173-30.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }
