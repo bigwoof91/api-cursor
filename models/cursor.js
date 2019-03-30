@@ -21,11 +21,5 @@ module.exports = function (sequelize, DataTypes) {
     goals: {
       type: DataTypes.ARRAY(DataTypes.STRING)
     },
-    createdAt: {
-      type: DataTypes.DATE
-    },
-    updatedAt: {
-      type: DataTypes.DATE
-    },
   });
 };

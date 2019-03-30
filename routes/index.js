@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const bodyParser = require('body-parser');
 const origins = require('./origins');
 const cors = require('cors')
@@ -25,7 +26,7 @@ module.exports = function (app) {
     res.write('<h1>api cursor - I help you design $h1t, well.</h1>');
     res.end();
   });
-  
+
   router.post('/', (req, res) => res.json({ postBody: req.body }));
 
   //= ========================
@@ -40,7 +41,9 @@ module.exports = function (app) {
   // POST cursor positions route
   router.post('/cursor', cors(corsOptions), cursor.setCoordinates);
 
+  app.use(express.static(path.join(__dirname, 'index.html')));
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: false }));
   app.use(morgan('combined')) // Log requests to API using morgan
+  app.use(router);
 };

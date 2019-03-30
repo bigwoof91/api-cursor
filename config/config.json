@@ -5,12 +5,6 @@
     "database": "cursor",
     "dialect": "postgres"
   },
-  "test": {
-    "username": "wolf",
-    "password": "",
-    "database": "cursor",
-    "dialect": "postgres"
-  },
   "production": {
     "use_env_variable": "DATABASE_URL",
     "dialect": "postgres"
