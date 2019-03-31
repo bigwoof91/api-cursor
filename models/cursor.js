@@ -6,7 +6,6 @@ module.exports = function (sequelize, DataTypes) {
         return JSON.parse(this.getDataValue('coordinates'));
       },
       set(coordinates) {
-        console.log(coordinates)
         return this.setDataValue('coordinates', coordinates);
       }
     },

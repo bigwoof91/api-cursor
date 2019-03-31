@@ -13,7 +13,8 @@ const corsOptions = {
     } else {
       callback(new Error('Not allowed by CORS'))
     }
-  }
+  },
+  preflightContinue: true,
 }
 
 module.exports = function (app) {
@@ -38,6 +39,7 @@ module.exports = function (app) {
     res.json({ message: 'hooray! welcome to our api!' });   
   });
 
+  router.options('/cursor', cors())
   // POST cursor positions route
   router.post('/cursor', cors(corsOptions), cursor.setCoordinates);
 
