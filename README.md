@@ -1,2 +1,2 @@
 # api-cursor
-Microservice that collects cursor position
+Service that collects and stores cursor position
